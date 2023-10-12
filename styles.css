@@ -1,0 +1,9 @@
+button {
+    display: block;
+    margin: 0px; 
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    padding: 5px;
+}
+
