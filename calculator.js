@@ -43,6 +43,7 @@ function promptCalculator()
 }
 
 
+
 /** 
  * Validates a one digit string entered by the user to be valid 
  * in an equation of given validValues
@@ -101,6 +102,7 @@ function validateUserChar(userChar, validValues, equationArr)
 }
 
 
+
 /** 
  * combines adjacent digits in an array, not seperated
  * by non-number values
@@ -130,6 +132,7 @@ function combineDigits(arr)
     returnArr.push(num); // push last number before "="
     return returnArr;
 }
+
 
 
 /** 
@@ -162,6 +165,7 @@ function applyOperations(arr, operations)
                     arr.splice(i-1, 3, numberOne * numberTwo);
                     break;
                 case "/":
+                    // return undefined if dividing by 0
                     if (numberTwo == 0) {return undefined;}
                     arr.splice(i-1, 3, numberOne / numberTwo);
                     break;
